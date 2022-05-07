@@ -8,7 +8,7 @@ int main(int argc, const char * argv[]) {
                                                        styleMask:NSTitledWindowMask | NSClosableWindowMask
                                                          backing:NSBackingStoreBuffered
                                                            defer:NO];
-        RaytracePreviewView *view = [[NSView alloc] initWithRect: NSMakeRect(200, 200, 400, 400)];
+        NSView *view = [[NSView alloc] initWithRect: NSMakeRect(200, 200, 400, 400)];
         window.contentView = view;
         [window makeKeyAndOrderFront:nil];
         [NSApp activateIgnoringOtherApps:YES];
